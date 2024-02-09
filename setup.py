@@ -4,14 +4,6 @@
 from pathlib import Path
 from setuptools import setup, find_packages
 
-NAME = "auraloss"
-DESCRIPTION = "Audio-focused loss functions in PyTorch"
-URL = "https://github.com/csteinmetz1/auraloss"
-EMAIL = "c.j.steinmetz@qmul.ac.uk"
-AUTHOR = "Christian Steinmetz"
-REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "0.4.0"
-
 HERE = Path(__file__).parent
 
 try:
