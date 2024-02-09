@@ -4,6 +4,14 @@
 from pathlib import Path
 from setuptools import setup, find_packages
 
+NAME = "auraloss"
+DESCRIPTION = "Audio-focused loss functions in PyTorch"
+URL = "https://github.com/csteinmetz1/auraloss"
+EMAIL = "c.j.steinmetz@qmul.ac.uk"
+AUTHOR = "Christian Steinmetz"
+REQUIRES_PYTHON = ">=3.6.0"
+VERSION = "0.4.0"
+
 HERE = Path(__file__).parent
 
 try:
@@ -20,16 +28,10 @@ setup(
     long_description_content_type="text/markdown",
     author=AUTHOR,
     author_email=EMAIL,
-    python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=["auraloss"],
     install_requires=["torch", "numpy"],
     extras_require={"test": ["resampy"], "all": ["matplotlib", "librosa", "scipy"]},
     include_package_data=True,
     license="Apache License 2.0",
-    classifiers=[
-        "License :: OSI Approved :: Apache Software License",
-        "Topic :: Multimedia :: Sound/Audio",
-        "Topic :: Scientific/Engineering",
-    ],
 )
