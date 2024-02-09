@@ -31,5 +31,4 @@ setup(
     install_requires=["torch", "numpy"],
     extras_require={"test": ["resampy"], "all": ["matplotlib", "librosa", "scipy"]},
     include_package_data=True,
-    license="Apache License 2.0",
 )
